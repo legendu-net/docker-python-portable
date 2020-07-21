@@ -1,7 +1,9 @@
 # dclong/python-portable [@DockerHub](https://hub.docker.com/r/dclong/python-portable/) | [@GitHub](https://github.com/dclong/docker-python-portable)
 
-Portable Python (with `pip` but not 3rd-party Python packages) in Docker
+Portable Python (with `pip` but not 3rd-party Python packages) in Docker 
+using [python-build-standalone](https://github.com/indygreg/python-build-standalone)
 for building standalone Python.
+
 
 ## Prerequisite
 You need to [install Docker](http://www.legendu.net/en/blog/docker-installation/) before you use this Docker image.
