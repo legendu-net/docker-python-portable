@@ -2,7 +2,7 @@
 FROM dclong/ubuntu_b
 # GIT: https://github.com/dclong/docker-ubuntu_b.git
 
-ARG url=https://github.com/indygreg/python-build-standalone/releases/download/20200517/cpython-3.8.3-x86_64-unknown-linux-gnu-pgo-20200518T0040.tar.zst
+ARG url=https://github.com/indygreg/python-build-standalone/releases/download/20201020/cpython-3.8.6-x86_64-unknown-linux-gnu-pgo-20201020T0627.tar.zst
 RUN apt-get update -y \
     && apt-get install -y --no-install-recommends \
         zstd \
