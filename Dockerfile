@@ -12,3 +12,4 @@ RUN apt-get update -y \
     && rm -rf /tmp/* \
     && apt-get autoremove \
     && apt-get clean
+COPY ssh/config /root/.ssh/
