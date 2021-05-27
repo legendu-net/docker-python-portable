@@ -10,7 +10,7 @@ RUN apt-get update -y \
     && curl -sSL $url -o /tmp/cpython.tar.zst \
     && tar -I zstd -xvf /tmp/cpython.tar.zst -C /tmp/ \
     && mv /tmp/python/install /opt/python \
-    && /opt/python/bin/pip3 install -U pip \
+    && /opt/python/bin/python3 -m pip install -U pip \
     && rm -rf /tmp/* \
     && apt-get autoremove \
     && apt-get clean
