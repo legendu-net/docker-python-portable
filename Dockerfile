@@ -10,7 +10,6 @@ RUN apt-get update -y \
     && curl -sSL $url -o /tmp/cpython.tar.zst \
     && tar -I zstd -xvf /tmp/cpython.tar.zst -C /tmp/ \
     && mv /tmp/python/install /opt/python \
-    && /scripts/update_shebang.py -d /opt/python/bin/ -s /opt/python/bin/python3 \
     && /opt/python/bin/pip3 install -U pip \
     && rm -rf /tmp/* \
     && apt-get autoremove \
