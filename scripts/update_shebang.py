@@ -1,4 +1,4 @@
-#!/opt/python/bin/python
+#!/opt/python/bin/python3
 """Update shebang of Python scripts in a directory.
 """
 from typing import Union
