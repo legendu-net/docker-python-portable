@@ -1,6 +1,6 @@
 # NAME: dclong/python-portable
-FROM dclong/ubuntu_b
-# GIT: https://github.com/dclong/docker-ubuntu_b.git
+FROM dclong/base
+# GIT: https://github.com/dclong/docker-base.git
 
 COPY scripts/ /scripts/
 ARG url=https://github.com/indygreg/python-build-standalone/releases/download/20200822/cpython-3.7.9-x86_64-unknown-linux-gnu-pgo-20200823T0036.tar.zst
