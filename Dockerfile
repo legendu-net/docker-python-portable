@@ -3,7 +3,7 @@ FROM dclong/base
 # GIT: https://github.com/legendu-net/docker-base.git
 
 COPY scripts/ /scripts/
-ARG url=https://github.com/indygreg/python-build-standalone/releases/download/20200822/cpython-3.7.9-x86_64-unknown-linux-gnu-pgo-20200823T0036.tar.zst
+ARG url=https://github.com/indygreg/python-build-standalone/releases/download/20220528/cpython-3.10.4+20220528-x86_64-unknown-linux-gnu-pgo+lto-full.tar.zst
 RUN apt-get update -y \
     && apt-get install -y --no-install-recommends \
         zstd \
