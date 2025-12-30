@@ -7,7 +7,7 @@ RUN icon download_github_release -r indygreg/python-build-standalone \
         -k 3.10,x86_64-,unknown,linux,gnu,pgo,lto,full,tar,zst \
         -K debug,sha256 \
         -o /tmp/cpython.tar.zst \
-    && apt-get update && apt-get install -y --no-install-recommends \
+    && apt-get -y update && apt-get -y install --no-install-recommends \
         zstd \
     && tar -I zstd -xvf /tmp/cpython.tar.zst -C /tmp/ \
     && mv /tmp/python/install /opt/python \
